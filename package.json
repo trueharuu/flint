@@ -1,0 +1,42 @@
+{
+  "name": "100129",
+  "version": "1.0.0",
+  "description": "hi",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "14.15.1",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "nodemon dist",
+    "sync-backend": "npm i pariah",
+    "sync": "git pull; npm i; npm run sync-backend",
+    "fall": "killall -u clancy node; git pull; node dist;"
+  },
+  "keywords": [],
+  "author": "Clancy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/discord-rpc": "^4.0.3",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.18.13",
+    "@types/node-fetch": "^2.5.8",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.16.0",
+    "prettier": "^2.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcy-at/Hallucinate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arcy-at/Hallucinate/issues"
+  },
+  "homepage": "https://github.com/arcy-at/Hallucinate#readme",
+  "dependencies": {
+    "detritus-client": "^0.16.3",
+    "dotenv": "^16.0.3",
+    "matrix-bot-sdk": "^0.6.5"
+  }
+}
